@@ -1,5 +1,6 @@
 # Deployment on Scalingo
 
+## Scalingo + Mongo add-on
 Somes changes have been made in the code to inject more easily some environment variables by scalingo secrets. Instead of putting credentials.env file in the repository which is not a proper way.
 
 - **MONGO_CERTIFICATE_BASE64** : Base64-encoded CA given by the scalingo add-on. The raw CA was download in the mongodb dashboard in scalingo then converted in base64.
@@ -23,6 +24,18 @@ Some log requests to create and list all todos
 Scalingo dashboard of mytodo
 
 ![dashboard](images/scalingo/dashboard.png)
+
+## Scalingo + Azure Cosmos DB for MongoDB
+
+Somes changes have been made in the code to integrate easily Azure Cosmos DB because CA is not needed.
+
+This is the dashboard of Azure Cosmos DB that is deployed in the resource group ynow-web
+
+![azure-cosmos](images/scalingo/azure-cosmos.png)
+
+This is new configs to connect with the Azure db
+
+![azure-env](images/scalingo/azure-env.png)
 
 # Introduction
 

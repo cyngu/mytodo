@@ -16,6 +16,14 @@ The application now is connected to the mongo database, so I we deploy again dat
 
 ![mytodo](images/scalingo/mytodo.png)
 
+Some log requests to create and list all todos
+
+![logs](images/scalingo/logs.png)
+
+Scalingo dashboard of mytodo
+
+![dashboard](images/scalingo/dashboard.png)
+
 # Introduction
 
 This web app built with a CLEAN stack (CLoudant NoSQL DB, Express, Angular and Node.js) is ready to be deployed on ICP (IBM Cloud Platform).

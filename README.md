@@ -1,3 +1,21 @@
+# Deployment on Scalingo
+
+Somes changes have been made in the code to inject more easily some environment variables by scalingo secrets. Instead of putting credentials.env file in the repository which is not a proper way.
+
+- **MONGO_CERTIFICATE_BASE64** : Base64-encoded CA given by the scalingo add-on. The raw CA was download in the mongodb dashboard in scalingo then converted in base64.
+
+- **MONGO_DB_NAME** : Name of the database we want to interact
+
+- **MONGO_URL** : URL of the mongo database which is an alias of SCALINGO_MONGO_URL
+
+- **SCALINGO_MONGO_URL** : URL set by scalingo when mongo was created
+
+![env](images/scalingo/env.png)
+
+The application now is connected to the mongo database, so I we deploy again data are not lost.
+
+![mytodo](images/scalingo/mytodo.png)
+
 # Introduction
 
 This web app built with a CLEAN stack (CLoudant NoSQL DB, Express, Angular and Node.js) is ready to be deployed on ICP (IBM Cloud Platform).
